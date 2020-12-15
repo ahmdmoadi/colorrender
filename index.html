@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <label for="file">Choose File:</label>
+    <input type="file" id="file" accept=".crcols"><br><br>
+
+    <label for="colors">Or type it manuely:</label><br>
+    <textarea name="" id="colors" cols="30" rows="10"></textarea><br><br>
+
+    <button id="process">process</button>
+
+    <button id="getPic">get image</button>
+
+    <div id="out"></div>
+
+
+    <script src="domtoimage.js"></script>
+    <script src="main.js"></script>
+    <script src="FileSaver.js"></script>
+</body>
+</html>

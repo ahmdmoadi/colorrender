@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    /* color: white; */
+}
+body {
+    /* background: #000; */
+}
+input[type=file] {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+}
+#out {
+    height: 300px;
+    width: 300px;
+    /* border: 2px dashed black; */
+    font-size: 0;
+}
+.cell {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    font-size: 0px;
+    line-height: 0px;
+    vertical-align: top;
+}
+#colors {
+    margin-left: 20px;
+    padding: 5px;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 24px;
+    /* background: #000; */
+    border: 2px solid rgb(97,175,239);
+    color: rgb(97,175,239);
+}
+button {
+    /* color: white; */
+    /* background: #000; */
+    border-radius: 10px;
+    /* border: 3px solid white; */
+    padding: 4px;
+    margin-left: 40px;
+    outline: none;
+}
+button:hover {
+    background: rgb(68, 68, 68);
+    transform: scale(1.1);
+    /* animation: hey ease-in-out .5s infinite; */
+}
+@keyframes hey {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
