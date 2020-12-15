@@ -19,8 +19,8 @@ input[type=file] {
     font-size: 25px;
 }
 #out {
-    height: 300px;
-    width: 300px;
+    /*height: 300px;*/
+    /*width: 300px;*/
     /* border: 2px dashed black; */
     font-size: 0;
 }
