@@ -24,7 +24,7 @@ gebi("file").addEventListener("change" , (e) => {
 
         if(colstr[0]=="flex") {//begin printstuff
             for (let i=2;i<colstr.length;i++) {
-                if (colstr[i] == "newline") {
+                if (colstr[i] == "nl") {
                     out.innerHTML += "<br>";
                     tststr += "<br>";
                 } else {
@@ -34,7 +34,7 @@ gebi("file").addEventListener("change" , (e) => {
             }
         } else {
         for (let i=0;i<colstr.length;i++) {
-            if (colstr[i] == "newline") {
+            if (colstr[i] == "nl") {
                 out.innerHTML += "<br>"
             } else {
                 out.innerHTML += `<div class="cell" style="background:${colstr[i]}"></div>`;
@@ -57,7 +57,7 @@ processcol.addEventListener("click", () => {
     console.log(colstr);
     if(colstr[0]=="flex") {
         for (let i=2;i<colstr.length;i++) {
-            if (colstr[i] == "newline") {
+            if (colstr[i] == "nl") {
                 out.innerHTML += "<br>";
                 tststr += "<br>";
             } else {
@@ -67,7 +67,7 @@ processcol.addEventListener("click", () => {
         }
     } else {
         for (let i=0;i<colstr.length;i++) {
-            if (colstr[i] == "newline") {
+            if (colstr[i] == "nl") {
                 out.innerHTML += "<br>";
                 tststr += "<br>";
             } else {
