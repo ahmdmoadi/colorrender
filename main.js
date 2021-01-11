@@ -20,7 +20,7 @@ gebi("file").addEventListener("change" , (e) => {
         //gebi("out").innerText = fileContents;
         colstr = fileContents;
 
-        colstr = colstr.split(";");
+        colstr = colstr.split(" ");
 
         if(colstr[0]=="flex") {//begin printstuff
             for (let i=2;i<colstr.length;i++) {
@@ -53,7 +53,7 @@ let tststr;
 processcol.addEventListener("click", () => {
     colstr = "";
     colstr = colors.value;
-    colstr = colstr.split(";");
+    colstr = colstr.split(" ");
     console.log(colstr);
     if(colstr[0]=="flex") {
         for (let i=2;i<colstr.length;i++) {
